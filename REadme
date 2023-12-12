@@ -1,0 +1,43 @@
+the code creates a Tkinter GUI application for email slicing. Users can input their email, click a button to extract the username and domain, and reset the application to enter a new email. The extracted information is displayed in a Text widget. Labels and spacing elements are used for a cleaner layout.
+
+1. **Import Libraries:**
+   - Import the Tkinter library as `tk`.
+
+2. **Create the Main Window:**
+   - Create a Tkinter window (`window`).
+   - Set window dimensions to 480x440 pixels.
+   - Set the background color to "#BE361A" (a shade of red).
+   - Make the window non-resizable.
+   - Set the window title to 'Simple Email Slicer'.
+
+3. **Define Functions:**
+   - Create a function `result()` that extracts the username and domain from the entered email and displays the results. If an error occurs, it shows an "ERROR!" message.
+   - Create a function `reset_all()` that clears the content of the Text widget and the Entry widget.
+
+4. **Create Labels:**
+   - Create a label `greeting` welcoming the user to the email slicer application.
+   - Create a label `Info` providing instructions on how to use the application.
+   - Create a label `entry_label` prompting the user to enter their email.
+   - Create a label `result_label` indicating where the results will be displayed.
+   - Create empty labels (`empty_label0` to `empty_label5`) for spacing.
+
+5. **Create Entry Widget:**
+   - Create an Entry widget (`entry`) for the user to input their email.
+   - Use a StringVar (`e1`) to track the value of the Entry widget.
+
+6. **Create Buttons:**
+   - Create a button (`button`) labeled "Done!" that, when clicked, triggers the `result()` function.
+   - Create a button (`reset`) labeled "Reset!" that, when clicked, triggers the `reset_all()` function.
+
+7. **Create Text Widget:**
+   - Create a Text widget (`text_box`) to display the results.
+   - Set the height to 5 lines and the width to 50 characters.
+
+8. **Pack Widgets into the Window:**
+   - Pack the widgets in a specific order to arrange them in the window.
+   - Use empty labels for spacing between widgets.
+
+9. **Start the Main Loop:**
+   - Call `window.mainloop()` to start the main event loop, allowing the GUI to respond to user interactions.
+
+ 
